@@ -17,6 +17,7 @@ public class Main {
         System.out.println(userMap.get("sato"));
         System.out.println(userMap.get("tanaka"));
 
+
         boolean havingkoyama = userMap.containsKey("koyama");
         System.out.println("koyama　は存在しますか");
         if (havingkoyama == true) {
