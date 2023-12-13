@@ -15,6 +15,8 @@ public class Main {
         userMap.put("数学", "100点");
         userMap.put("国語", "90点");
         userMap.put("英語", "80点");
+        userMap.put("理科", "80点");
+
 
         System.out.println(userMap.get("数学"));
         System.out.println(userMap.get("国語"));
