@@ -19,6 +19,8 @@ public class Main {
         System.out.println(userMap.get("数学"));
         System.out.println(userMap.get("国語"));
         System.out.println(userMap.get("英語"));
+        System.out.println(userMap.get("英語"));
+
 
 
         boolean koumoku = userMap.containsKey("数学");
