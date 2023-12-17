@@ -11,21 +11,21 @@ public class Main {
     public static void main(String[] args) {
 
 // Map
-        Map<String, String> userMap = new HashMap<>();
-        userMap.put("数学", "100点");
-        userMap.put("国語", "90点");
-        userMap.put("英語", "80点");
-
-        System.out.println(userMap.get("数学"));
-        System.out.println(userMap.get("国語"));
-        System.out.println(userMap.get("英語"));
-        System.out.println(userMap.get("英語"));
+        Map<String, String> score = new HashMap<>();
+        score.put("数学", "100点");
+        score.put("国語", "90点");
+        score.put("英語", "80点");
+        score.put("理科", "80点");
 
 
+        System.out.println(score.get("数学"));
+        System.out.println(score.get("国語"));
+        System.out.println(score.get("英語"));
 
-        boolean koumoku = userMap.containsKey("数学");
+
+        boolean subject = score.containsKey("数学");
         System.out.println("数学は100点です！");
-        if (koumoku) {
+        if (subject) {
             System.out.println("はい");
         } else {
             System.out.println("いいえ");
@@ -33,10 +33,11 @@ public class Main {
 //List.of
         List<Student> studentList = List.of(new Student("⼭⽥", 16, "A"),
                 new Student("⽥中", 17, "B"),
-                new Student("鈴⽊", 15, "C"));
+                new Student("鈴⽊", 15, "C"),
+                new Student("野田", 27, "D"));
 
         for (Student student : studentList) {
-            if (student.getClassName().equals("A")) {
+            if (student.getClassName().equals("D")) {
                 System.out.println("学⽣の名前：" + student.getName());
             }
         }
@@ -59,13 +60,13 @@ public class Main {
         }
 
 //List
-        List<String> Hobby = new ArrayList<String>();
-        Hobby.add("プログラミング学習");
-        Hobby.add("読書");
-        Hobby.add("ゴルフ");
-        System.out.println("趣味は"+ Hobby.get(0) + "です。");
+        List<String> hobby = new ArrayList<String>();
+        hobby.add("プログラミング学習");
+        hobby.add("読書");
+        hobby.add("ゴルフ");
+        System.out.println("趣味は"+ hobby.get(0) + "です。");
 
-        for (String content : Hobby) {
+        for (String content : hobby) {
             System.out.println(content + "は好きです。");
         }
     }

@@ -1,15 +1,16 @@
 package org.example;
 
 public class Student {
-    private String name;
-    private int age;
-    private String ClassName;
+    private final String name;
+    private final int age;
+    private final String className;
 
     public Student(String name, int age, String className) {
         this.name = name;
         this.age = age;
-        ClassName = className;
+        this.className = className;
     }
+
 
     public String getName() {
         return name;
@@ -20,6 +21,6 @@ public class Student {
     }
 
     public String getClassName() {
-        return ClassName;
+        return className;
     }
 }
